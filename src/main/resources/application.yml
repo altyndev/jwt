@@ -1,0 +1,20 @@
+jwt_secret: ALTYN
+server:
+    error:
+        include-message: always
+    port: 8000
+spring:
+    datasource:
+        url: jdbc:postgresql://localhost:2009/jwt
+        username: postgres
+        password: noygut
+    jpa:
+        database-platform: org.hibernate.dialect.PostgreSQL10Dialect
+        defer-datasource-initialization: true
+        hibernate:
+            ddl-auto: create
+springdoc:
+    swagger-ui:
+        path: /swagger
+
+
